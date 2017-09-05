@@ -1,15 +1,15 @@
 $moduleRoot = Resolve-Path "$PSScriptRoot\.."
-Import-Module (Join-Path $moduleRoot "Veeam-vSphere-Interactions.psm1") -force
+Import-Module (Join-Path $moduleRoot "Veeam-vSphere-Interactions.psd1") -force
 
 $verbs = (Get-Command -Module 'Veeam-vSphere-Interactions' |
   ForEach-Object -Process {
     $_.Name.Split('-')[0]
   } |
 Select-Object -Unique)
- 
+
 foreach ($verb in $verbs)
 {
-  $data = @()  
+  $data = @()
   $data += "$verb Commands"
   $data += '========================='
   $data += ''
