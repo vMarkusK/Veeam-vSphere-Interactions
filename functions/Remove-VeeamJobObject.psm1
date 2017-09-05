@@ -15,7 +15,7 @@ function Remove-VeeamJobObject {
     Tested Against Environment:
     vSphere Version: 6.5
     Veeam Version: 9.5 U2
-    PowerCLI Version: PowerCLI 6.3.1
+    PowerCLI Version: PowerCLI 6.5.1
     PowerShell Version: 5.1
     OS Version: Windows Server 2012 R2
     ===========================================================================
