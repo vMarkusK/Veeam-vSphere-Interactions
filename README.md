@@ -20,7 +20,7 @@ MY CLOUD-(R)EVOLUTION [mycloudrevolution.com](http://mycloudrevolution.com/)
 ## Project Description:
 
 The 'Veeam-vSphere-Interactions' PowerShell Module enables you to interact via VMware PowerCLI with the Veeam Backup & Replication PowerShell Cmdlets.
-Is is pissible to gather the Protection state of your VMware vSphere VMs or add VMs to existing Veeam Backup Jobs.
+It is possible to gather the Protection state of your VMware vSphere VMs, Restore VMs or manage VMs in existing Veeam Backup Jobs.
 
 # Module Details
 
