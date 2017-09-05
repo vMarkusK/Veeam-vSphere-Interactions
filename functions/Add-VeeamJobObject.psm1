@@ -60,7 +60,7 @@ Begin {
         throw "No VI Server Connected!"
     }
 
-    if ($VbrBackupJob = Get-VBRBackup -Name $JobName) {
+    if ($VbrBackupJob = Get-VBRJob -Name $JobName) {
         Write-Verbose "Backup Job '$JobName' in Veeam Inventory found"
     }
     else {
@@ -72,13 +72,13 @@ Process {
     foreach ($MyVm in $MyVms) {
         $MoRef = $MyVm.ExtensionData.MoRef.Value
         if ($VeeamVm = Find-VBRViEntity -Server $ViServer | Where-Object {$_.Reference -eq $MoRef}) {
-            $Result = Add-VBRViJobObject -Job $VbrBackupJob.GetJob() -Entities $VeeamVm
+            $Result = Add-VBRViJobObject -Job $VbrBackupJob -Entities $VeeamVm
             if ($Result) {
                 "VM '$($VeeamVm.Name)' added to Backup Job '$JobName' "
             }
         }
 
     }
-    (Get-VBRJobObject -Job $VbrBackupJob.GetJob()).GetObject() | Select-Object Name, ViType
+    (Get-VBRJobObject -Job $VbrBackupJob).GetObject() | Select-Object Name, ViType
 	}
 }
