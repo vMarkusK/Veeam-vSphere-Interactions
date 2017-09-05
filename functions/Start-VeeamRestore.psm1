@@ -23,7 +23,7 @@ function Start-VeeamRestore {
     ===========================================================================
 
     .DESCRIPTION
-    This Function checks restores VMware vSphere VMs to the original location.
+    This Function restores VMware vSphere VMs to the original location.
 
     RestorePoint is the lastest one. You will have to power up the VM manually.
 

@@ -62,3 +62,13 @@ BUG: If all objects are removed from the Job, a output error occures!
 
 
 ![Remove-VeeamJobObject](/media/Remove-VeeamJobObject.png)
+
+## Start-VeeamRestore
+
+This Function restores VMware vSphere VMs to the original location.
+
+RestorePoint is the lastest one. You will have to power up the VM manually.
+
+
+![Start-VeeamRestore](/media/Start-VeeamRestore.png)
+
