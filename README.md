@@ -72,3 +72,10 @@ RestorePoint is the lastest one. You will have to power up the VM manually.
 
 ![Start-VeeamRestore](/media/Start-VeeamRestore.png)
 
+## Start-VeeamQuickBackup
+
+This Function start a Quick Backup for VMware vSphere VMs.
+
+For a Quick Backup the VM must be added to a Backup Job and at least one Full Backup must exist.
+
+![Start-VeeamQuickBackup](/media/Start-VeeamQuickBackup.png)
