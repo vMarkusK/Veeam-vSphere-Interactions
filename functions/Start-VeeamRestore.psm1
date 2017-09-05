@@ -8,6 +8,7 @@ function Start-VeeamRestore {
     ===========================================================================
     Changelog:
     2017.09 ver 1.0 Base Release
+    2017.09 ver 1.1 More error handling
     ===========================================================================
     External Code Sources:
     -
@@ -15,7 +16,7 @@ function Start-VeeamRestore {
     Tested Against Environment:
     vSphere Version: 6.5
     Veeam Version: 9.5 U2
-    PowerCLI Version: PowerCLI 6.3.1
+    PowerCLI Version: PowerCLI 6.5.1
     PowerShell Version: 5.1
     OS Version: Windows Server 2012 R2
     ===========================================================================
@@ -71,6 +72,10 @@ Process {
 
             if ($Result) {
                 $Result | Select-Object Name, Result, CreationTime, EndTime
+            }
+
+            if ($Result.Result -eq "Failed") {
+                Throw "Restore Failed. See Veeam B&R Console for more details!"
             }
 
         }
