@@ -33,6 +33,21 @@ Is is pissible to gather the Protection state of your VMware vSphere VMs or add 
     * vCenter needs to be connected with the same name, FQDN or IP like it is configured in Veeam Backup & Replication Console
     * Only one vCenter can be connected
 
+![vCenter](/media/vCenter.png)
+## Functions
+
+### Get-VeeamProtection
+
+This Function checks the protections state of VMware vSphere VMs in Veeam Backup & Replication.
+Protected means existing RestorePoints. Beeing a member of a Backup Job does not change the Protection State.
+
+![Get-VeeamProtection](/media/Get-VeeamProtection.png)
+
+## Add-VeeamJobObject
+
+This Function adds VMware vSphere VMs to an existing Veeam Backup & Replication Backup Job.
+
+* Only VMs can be added at the moment.
 
 
-
+![Add-VeeamJobObject](/media/Add-VeeamJobObject.png)

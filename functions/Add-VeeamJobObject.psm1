@@ -25,9 +25,10 @@ function Add-VeeamJobObject {
     .DESCRIPTION
     This Function adds VMware vSphere VMs to an existing Veeam Backup & Replication Backup Job.
 
-    Only VMs con be added at the moment.
+    Only VMs can be added at the moment.
 
     .Example
+    Get-VM -Name test3 | Add-VeeamJobObject -JobName "Backup Job 1"
 
 #Requires PS -Version 4.0
 #Requires -Modules VMware.VimAutomation.Core, @{ModuleName="VMware.VimAutomation.Core";ModuleVersion="6.3.0.0"}

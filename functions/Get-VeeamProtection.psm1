@@ -28,6 +28,7 @@ function Get-VeeamProtection {
     Protections state is gathred by existing Backup SavePoints.
 
     .Example
+    Get-VM | Get-VeeamProtection | Format-Table -AutoSize
 
 #Requires PS -Version 4.0
 #Requires -Modules VMware.VimAutomation.Core, @{ModuleName="VMware.VimAutomation.Core";ModuleVersion="6.3.0.0"}
