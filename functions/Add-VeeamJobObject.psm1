@@ -8,6 +8,7 @@ function Add-VeeamJobObject {
     ===========================================================================
     Changelog:
     2017.09 ver 1.0 Base Release
+    2017.09 ver 1.1 Output Enhancement, Enhanced Backup Job handling
     ===========================================================================
     External Code Sources:
     -
@@ -79,6 +80,9 @@ Process {
         }
 
     }
+
+}
+End {
     (Get-VBRJobObject -Job $VbrBackupJob).GetObject() | Select-Object Name, ViType
-	}
+}
 }
