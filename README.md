@@ -67,7 +67,8 @@ BUG: If all objects are removed from the Job, a output error occures!
 
 This Function restores VMware vSphere VMs to the original location.
 
-RestorePoint is the lastest one. You will have to power up the VM manually.
+* RestorePoint is the lastest one
+* You will have to power up the VM manually.
 
 
 ![Start-VeeamRestore](/media/Start-VeeamRestore.png)
@@ -76,6 +77,6 @@ RestorePoint is the lastest one. You will have to power up the VM manually.
 
 This Function start a Quick Backup for VMware vSphere VMs.
 
-For a Quick Backup the VM must be added to a Backup Job and at least one Full Backup must exist.
+* For a Quick Backup the VM must be added to a Backup Job and at least one Full Backup must exist.
 
 ![Start-VeeamQuickBackup](/media/Start-VeeamQuickBackup.png)
