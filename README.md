@@ -51,3 +51,14 @@ This Function adds VMware vSphere VMs to an existing Veeam Backup & Replication 
 
 
 ![Add-VeeamJobObject](/media/Add-VeeamJobObject.png)
+
+## Remove-VeeamJobObject
+
+This Function removes VMware vSphere VMs from a Veeam Backup & Replication Backup Job.
+
+* Only VMs can be removed at the moment.
+
+BUG: If all objects are removed from the Job, a output error occures!
+
+
+![Remove-VeeamJobObject](/media/Remove-VeeamJobObject.png)
