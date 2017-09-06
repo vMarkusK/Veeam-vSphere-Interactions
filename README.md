@@ -1,5 +1,6 @@
 Veeam-vSphere-Interactions PowerShell Module
 =============
+![PowerCLI Loves Veeam](/media/PowerCLI_loves_Veeam.png)
 
 # About
 
