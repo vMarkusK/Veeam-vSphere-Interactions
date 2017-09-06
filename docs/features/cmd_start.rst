@@ -36,9 +36,9 @@ PARAMETERS
     
     PS C:\>Get-VM -Name test | Start-VeeamQuickBackup
     
-    #Requires PS -Version 4.0
-    #Requires -Modules VMware.VimAutomation.Core, @{ModuleName="VMware.VimAutomation.Core";ModuleVersion="6.3.0.0"}
-    #Requires -PSSnapin VeeamPssnapin
+    Requires -Version 4
+    Requires -Modules VMware.VimAutomation.Core, @{ModuleName="VMware.VimAutomation.Core";ModuleVersion="6.3.0.0"}
+    Requires -PSSnapin VeeamPssnapin
     
     
     
@@ -81,9 +81,9 @@ PARAMETERS
     
     PS C:\>Get-VM | Start-VeeamRestore
     
-    #Requires PS -Version 4.0
-    #Requires -Modules VMware.VimAutomation.Core, @{ModuleName="VMware.VimAutomation.Core";ModuleVersion="6.3.0.0"}
-    #Requires -PSSnapin VeeamPssnapin
+    Requires -Version 4
+    Requires -Modules VMware.VimAutomation.Core, @{ModuleName="VMware.VimAutomation.Core";ModuleVersion="6.3.0.0"}
+    Requires -PSSnapin VeeamPssnapin
     
     
     

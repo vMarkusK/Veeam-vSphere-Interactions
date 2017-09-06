@@ -38,9 +38,9 @@ PARAMETERS
     
     PS C:\>Get-VM -Name test3 | Remove-VeeamJobObject -JobName "Backup Job 1"
     
-    #Requires PS -Version 4.0
-    #Requires -Modules VMware.VimAutomation.Core, @{ModuleName="VMware.VimAutomation.Core";ModuleVersion="6.3.0.0"}
-    #Requires -PSSnapin VeeamPssnapin
+    Requires -Version 4
+    Requires -Modules VMware.VimAutomation.Core, @{ModuleName="VMware.VimAutomation.Core";ModuleVersion="6.3.0.0"}
+    Requires -PSSnapin VeeamPssnapin
     
     
     

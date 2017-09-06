@@ -30,10 +30,10 @@ function Get-VeeamProtection {
     .Example
     Get-VM | Get-VeeamProtection | Format-Table -AutoSize
 
-#Requires PS -Version 4.0
+#>
+#Requires -Version 4
 #Requires -Modules VMware.VimAutomation.Core, @{ModuleName="VMware.VimAutomation.Core";ModuleVersion="6.3.0.0"}
 #Requires -PSSnapin VeeamPssnapin
-#>
 
   [CmdletBinding()]
     param(
