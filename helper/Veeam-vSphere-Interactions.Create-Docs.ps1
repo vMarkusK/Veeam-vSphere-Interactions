@@ -1,7 +1,8 @@
-$moduleRoot = Resolve-Path "$PSScriptRoot\.."
-Import-Module (Join-Path $moduleRoot "Veeam-vSphere-Interactions.psd1") -force
+$moduleRoot = Resolve-Path "$PSScriptRoot\..\Veeam.PowerCLI-Interactions"
+$docRoot = Resolve-Path "$PSScriptRoot\.."
+Import-Module (Join-Path $moduleRoot "Veeam.PowerCLI-Interactions.psd1") -force
 
-$verbs = (Get-Command -Module 'Veeam-vSphere-Interactions' |
+$verbs = (Get-Command -Module 'Veeam.PowerCLI-Interactions' |
   ForEach-Object -Process {
     $_.Name.Split('-')[0]
   } |
@@ -15,7 +16,7 @@ foreach ($verb in $verbs)
   $data += ''
   $data += "This page contains details on **$verb** commands."
   $data += ''
-  foreach ($help in (Get-Command -Module 'Veeam-vSphere-Interactions' | Where-Object -FilterScript {
+  foreach ($help in (Get-Command -Module 'Veeam.PowerCLI-Interactions' | Where-Object -FilterScript {
         $_.name -match $verb
   }))
   {
@@ -26,5 +27,5 @@ foreach ($verb in $verbs)
     $data += ''
   }
 
-  $data | Out-File -FilePath "$moduleRoot\docs\features\cmd_$($verb.ToLower()).rst" -Encoding utf8
+  $data | Out-File -FilePath "$docRoot\docs\features\cmd_$($verb.ToLower()).rst" -Encoding utf8
 }
