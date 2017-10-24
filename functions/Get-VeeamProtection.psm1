@@ -8,6 +8,7 @@ function Get-VeeamProtection {
     ===========================================================================
     Changelog:
     2017.09 ver 1.0 Base Release
+    2017.10 ver 1.1 Fixed issue with large environments (github.com/WulfLars)
     ===========================================================================
     External Code Sources:
     -

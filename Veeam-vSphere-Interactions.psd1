@@ -12,7 +12,7 @@
 # RootModule = ''
 
 # Version number of this module.
-ModuleVersion = '0.4.0'
+ModuleVersion = '0.4.1'
 
 # Supported PSEditions
 # CompatiblePSEditions = @()
@@ -66,14 +66,14 @@ Copyright = '(c) 2017 Markus. Alle Rechte vorbehalten.'
 # FormatsToProcess = @()
 
 # Modules to import as nested modules of the module specified in RootModule/ModuleToProcess
-NestedModules = @('functions\Add-VeeamJobObject.psm1', 
-               'functions\Get-VeeamProtection.psm1', 
-               'functions\Remove-VeeamJobObject.psm1', 
-               'functions\Start-VeeamQuickBackup.psm1', 
+NestedModules = @('functions\Add-VeeamJobObject.psm1',
+               'functions\Get-VeeamProtection.psm1',
+               'functions\Remove-VeeamJobObject.psm1',
+               'functions\Start-VeeamQuickBackup.psm1',
                'functions\Start-VeeamRestore.psm1')
 
 # Functions to export from this module, for best performance, do not use wildcards and do not delete the entry, use an empty array if there are no functions to export.
-FunctionsToExport = 'Add-VeeamJobObject', 'Get-VeeamProtection', 'Remove-VeeamJobObject', 
+FunctionsToExport = 'Add-VeeamJobObject', 'Get-VeeamProtection', 'Remove-VeeamJobObject',
                'Start-VeeamQuickBackup', 'Start-VeeamRestore'
 
 # Cmdlets to export from this module, for best performance, do not use wildcards and do not delete the entry, use an empty array if there are no cmdlets to export.
