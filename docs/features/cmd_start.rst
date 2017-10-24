@@ -20,7 +20,8 @@ SYNTAX
 DESCRIPTION
     This Function start a Quick Backup for VMware vSphere VMs.
     
-    For a Quick Backup the VM must be added to a Backup Job and at least one Full Backup must exist.
+    For a Quick Backup the VM must be added to a Backup Job and at least one 
+    Full Backup must exist.
     
 
 PARAMETERS
@@ -29,15 +30,18 @@ PARAMETERS
     <CommonParameters>
         This cmdlet supports the common parameters: Verbose, Debug,
         ErrorAction, ErrorVariable, WarningAction, WarningVariable,
-        OutBuffer, PipelineVariable, and OutVariable. For more information, see 
-        about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216). 
+        OutBuffer, PipelineVariable, and OutVariable. For more information, 
+    see 
+        about_CommonParameters 
+    (http://go.microsoft.com/fwlink/?LinkID=113216). 
     
     -------------------------- EXAMPLE 1 --------------------------
     
     PS C:\>Get-VM -Name test | Start-VeeamQuickBackup
     
     Requires -Version 4
-    Requires -Modules VMware.VimAutomation.Core, @{ModuleName="VMware.VimAutomation.Core";ModuleVersion="6.3.0.0"}
+    Requires -Modules VMware.VimAutomation.Core, 
+    @{ModuleName="VMware.VimAutomation.Core";ModuleVersion="6.3.0.0"}
     Requires -PSSnapin VeeamPssnapin
     
     
@@ -74,15 +78,18 @@ PARAMETERS
     <CommonParameters>
         This cmdlet supports the common parameters: Verbose, Debug,
         ErrorAction, ErrorVariable, WarningAction, WarningVariable,
-        OutBuffer, PipelineVariable, and OutVariable. For more information, see 
-        about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216). 
+        OutBuffer, PipelineVariable, and OutVariable. For more information, 
+    see 
+        about_CommonParameters 
+    (http://go.microsoft.com/fwlink/?LinkID=113216). 
     
     -------------------------- EXAMPLE 1 --------------------------
     
     PS C:\>Get-VM | Start-VeeamRestore
     
     Requires -Version 4
-    Requires -Modules VMware.VimAutomation.Core, @{ModuleName="VMware.VimAutomation.Core";ModuleVersion="6.3.0.0"}
+    Requires -Modules VMware.VimAutomation.Core, 
+    @{ModuleName="VMware.VimAutomation.Core";ModuleVersion="6.3.0.0"}
     Requires -PSSnapin VeeamPssnapin
     
     

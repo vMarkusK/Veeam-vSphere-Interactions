@@ -21,16 +21,16 @@ ModuleVersion = '0.4.1'
 GUID = '16c4b46a-61b9-458b-9383-2b4ef59d7193'
 
 # Author of this module
-Author = 'Markus'
+Author = 'Markus Kraus'
 
 # Company or vendor of this module
 CompanyName = 'mycloudrevolution.com'
 
 # Copyright statement for this module
-Copyright = '(c) 2017 Markus. Alle Rechte vorbehalten.'
+Copyright = '(c) 2017 Markus Kraus. All rights reserved.'
 
 # Description of the functionality provided by this module
-# Description = ''
+Description = 'This PowerShell Module enables you to interact via VMware PowerCLI with the Veeam Backup & Replication PowerShell Cmdlets.'
 
 # Minimum version of the Windows PowerShell engine required by this module
 # PowerShellVersion = ''
@@ -51,7 +51,7 @@ Copyright = '(c) 2017 Markus. Alle Rechte vorbehalten.'
 # ProcessorArchitecture = ''
 
 # Modules that must be imported into the global environment prior to importing this module
-# RequiredModules = @()
+RequiredModules = @("VMware.VimAutomation.Core")
 
 # Assemblies that must be loaded prior to importing this module
 # RequiredAssemblies = @()
@@ -77,13 +77,13 @@ FunctionsToExport = 'Add-VeeamJobObject', 'Get-VeeamProtection', 'Remove-VeeamJo
                'Start-VeeamQuickBackup', 'Start-VeeamRestore'
 
 # Cmdlets to export from this module, for best performance, do not use wildcards and do not delete the entry, use an empty array if there are no cmdlets to export.
-CmdletsToExport = '*'
+# CmdletsToExport = '*'
 
 # Variables to export from this module
-VariablesToExport = '*'
+# VariablesToExport = '*'
 
 # Aliases to export from this module, for best performance, do not use wildcards and do not delete the entry, use an empty array if there are no aliases to export.
-AliasesToExport = '*'
+# AliasesToExport = '*'
 
 # DSC resources to export from this module
 # DscResourcesToExport = @()
@@ -100,13 +100,13 @@ PrivateData = @{
     PSData = @{
 
         # Tags applied to this module. These help with module discovery in online galleries.
-        # Tags = @()
+        Tags = @("Veeam", "VMware")
 
         # A URL to the license for this module.
         # LicenseUri = ''
 
         # A URL to the main website for this project.
-        # ProjectUri = ''
+        ProjectUri = 'http://bit.ly/VeeamPowerCLI'
 
         # A URL to an icon representing this module.
         # IconUri = ''

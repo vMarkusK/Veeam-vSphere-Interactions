@@ -1,0 +1,73 @@
+TOPIC
+        about_Veeam.PowerCLI-Interactions
+
+SHORT DESCRIPTION
+        This PowerShell Module enables you to interact via VMware PowerCLI with the Veeam Backup & Replication PowerShell Cmdlets.
+        It is possible to gather the Protection state of your VMware vSphere VMs, Restore VMs or manage VMs in existing Veeam Backup Jobs.
+
+LONG DESCRIPTION
+        This PowerShell Module enables you to interact via VMware PowerCLI with the Veeam Backup & Replication PowerShell Cmdlets.
+        It is possible to gather the Protection state of your VMware vSphere VMs, Restore VMs or manage VMs in existing Veeam Backup Jobs.
+
+        The moduls is segmented in differenet topics:
+
+        Get Protection State:
+                * Get-VeeamProtection
+
+        Run Jobs:
+                * Start-VeeamQuickBackup
+                * Start-VeeamRestore
+
+        Manage Jobs:
+                * Add-VeeamJobObject
+                * Remove-VeeamJobObject
+
+RUNNING  Veeam.PowerCLI-Interactions
+
+        There are several commands provided by the Veeam.PowerCLI-Interactions module, those are:
+
+        Get-VeeamProtection     -myVMs
+
+        Start-VeeamQuickBackup  -myVMs
+
+        Start-VeeamRestore      -myVMs
+
+        Add-VeeamJobObject      -myVMs -JobName
+
+        Remove-VeeamJobObject   -myVMs -JobName
+
+        Before you get started with the Functions of the module you need to connect a vCenter Server
+        and a Veeam Backup & Replication Server.
+
+        PS C:\> Connect-VIServer -Server <Your vCenter Server>
+
+        PS C:\> Connect-VBRServer -Server <Your vCenter Server>
+
+        To identify the VM Objects the vCenter Connection must match Veeam Configuration for the vCenter.
+        For more Details see: http://bit.ly/VeeamPowerCLI
+
+CONTRIBUTE
+
+        Veeam.PowerCLI-Interactions is on GitHub:
+
+        https://github.com/mycloudrevolution/Veeam-vSphere-Interactions
+
+        My project site for this Module:
+
+        http://bit.ly/VeeamPowerCLI
+
+        As you run the Veeam.PowerCLI-Interactions and find what you believe to be are bugs,
+        please submit them to:
+
+        https://github.com/mycloudrevolution/Veeam-vSphere-Interactions/issues
+
+        Better yet, fix the bug and submit a pull request.
+
+        Enhancement request are also welcome!
+
+SEE ALSO
+        VMware PowerCLI Documentation:
+        https://www.vmware.com/support/developer/PowerCLI/
+
+        Veeam PowerShell Reference:
+        https://helpcenter.veeam.com/docs/backup/powershell/getting_started.html

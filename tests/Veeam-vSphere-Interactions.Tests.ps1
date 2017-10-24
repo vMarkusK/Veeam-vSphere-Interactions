@@ -1,5 +1,5 @@
-$moduleRoot = Resolve-Path "$PSScriptRoot\.."
-$moduleName = "Veeam-vSphere-Interactions"
+$moduleRoot = Resolve-Path "$PSScriptRoot\..\Veeam.PowerCLI-Interactions"
+$moduleName = "Veeam.PowerCLI-Interactions"
 
 Describe "General project validation: $moduleName" {
 
