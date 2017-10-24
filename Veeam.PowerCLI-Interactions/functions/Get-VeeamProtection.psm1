@@ -8,6 +8,7 @@ function Get-VeeamProtection {
     ===========================================================================
     Changelog:
     2017.09 ver 1.0 Base Release
+    2017.10 ver 1.1 Fixed issue with large environments (github.com/WulfLars)
     ===========================================================================
     External Code Sources:
     -
@@ -63,7 +64,7 @@ Process {
     foreach ($MyVm in $MyVms) {
         $MoRef = $MyVm.ExtensionData.MoRef.Value
         if ($VeeamVm = Find-VBRViEntity -Server $ViServer | Where-Object {$_.Reference -eq $MoRef}) {
-            [Array]$VmRestorePoints = $VbrReastorePoints | Where-Object {$_.InsideDir -match $MoRef}
+            [Array]$VmRestorePoints = $VbrReastorePoints | Where-Object {$_.InsideDir.Split("(,)") -eq $MoRef}
             if ($VmRestorePoints.count -gt 0) {$IsProtected = $true} else {$IsProtected = $false}
             $LastRestorePoint = $VmRestorePoints | Sort-Object CreationTime | Select-Object -Last 1
             $LastBackupJob = Get-VBRBackup | Where-Object {$_.Id -eq $LastRestorePoint.BackupId}
