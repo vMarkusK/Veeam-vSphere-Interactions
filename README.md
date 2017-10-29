@@ -1,5 +1,7 @@
 Veeam-vSphere-Interactions PowerShell Module
 =============
+[![Flattr this git repo](http://api.flattr.com/button/flattr-badge-large.png)](https://flattr.com/submit/auto?user_id=vMarkus_K&url=https://github.com/mycloudrevolution/Veeam-vSphere-Interactions&title=Veeam-vSphere-Interactions&language=Powershell&tags=github&category=software)
+
 ![PowerCLI Loves Veeam](/media/PowerCLI_loves_Veeam.png)
 
 # About
@@ -9,10 +11,6 @@ Veeam-vSphere-Interactions PowerShell Module
 Markus Kraus [@vMarkus_K](https://twitter.com/vMarkus_K)
 
 MY CLOUD-(R)EVOLUTION [mycloudrevolution.com](http://mycloudrevolution.com/)
-
-## Donate
-
-[![Flattr this git repo](http://api.flattr.com/button/flattr-badge-large.png)](https://flattr.com/submit/auto?user_id=vMarkus_K&url=https://github.com/mycloudrevolution/Veeam-vSphere-Interactions&title=Veeam-vSphere-Interactions&language=Powershell&tags=github&category=software)
 
 ## Project WebSite:
 
