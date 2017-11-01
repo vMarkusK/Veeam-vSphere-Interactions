@@ -33,6 +33,7 @@
     "tasks": [
         {
             "taskName": "CreateDocs",
+            "group": "build",
             "args": [
                 "Write-Host 'Invoking CreateDocs'; [Threading.Thread]::CurrentThread.CurrentUICulture = 'en-US'; ./helper/*.Create-Docs.ps1;",
                 "Invoke-Command { Write-Host 'Completed CreateDocs task in task runner.' }"
@@ -69,24 +70,7 @@
                 "Invoke-Command { Write-Host 'Completed Test task in task runner.' }"
             ],
             "group": "test",
-            "problemMatcher": [
-                {
-                    "owner": "powershell",
-                    "fileLocation": ["absolute"],
-                    "severity": "error",
-                    "pattern": [
-                        {
-                            "regexp": "^\\s*(\\[-\\]\\s*.*?)(\\d+)ms\\s*$",
-                            "message": 1
-                        },
-                        {
-                            "regexp": "^\\s+at\\s+[^,]+,\\s*(.*?):\\s+line\\s+(\\d+)$",
-                            "file": 1,
-                            "line": 2
-                        }
-                    ]
-                }
-            ]
+            "problemMatcher": "$pester"
         }
 	]
 }
