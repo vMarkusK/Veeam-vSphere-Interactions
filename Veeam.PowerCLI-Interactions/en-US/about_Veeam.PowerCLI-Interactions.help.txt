@@ -3,13 +3,13 @@ TOPIC
 
 SHORT DESCRIPTION
         This PowerShell Module enables you to interact via VMware PowerCLI with the Veeam Backup & Replication PowerShell Cmdlets.
-        It is possible to gather the Protection state of your VMware vSphere VMs, Restore VMs or manage VMs in existing Veeam Backup Jobs.
+        It is possible to gather the protection state of your VMware vSphere VMs, restore VMs or manage VMs in existing Veeam Backup Jobs.
 
 LONG DESCRIPTION
         This PowerShell Module enables you to interact via VMware PowerCLI with the Veeam Backup & Replication PowerShell Cmdlets.
-        It is possible to gather the Protection state of your VMware vSphere VMs, Restore VMs or manage VMs in existing Veeam Backup Jobs.
+        It is possible to gather the protection state of your VMware vSphere VMs, restore VMs or manage VMs in existing Veeam Backup Jobs.
 
-        The moduls is segmented in differenet topics:
+        The moduls is segmented in different topics:
 
         Get Protection State:
                 * Get-VeeamProtection
