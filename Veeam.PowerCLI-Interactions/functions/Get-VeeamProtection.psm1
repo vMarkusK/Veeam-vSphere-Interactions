@@ -24,9 +24,9 @@ function Get-VeeamProtection {
     ===========================================================================
 
     .DESCRIPTION
-    This Function checks the protections state of VMware vSphere VMs in Veeam Backup & Replication.
+    This Function checks the protection state of VMware vSphere VMs in Veeam Backup & Replication.
 
-    Protections state is gathred by existing Backup SavePoints.
+    Protection state is gathred by existing Backup SavePoints.
 
     .Example
     Get-VM | Get-VeeamProtection | Format-Table -AutoSize
