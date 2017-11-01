@@ -40,10 +40,19 @@
             ]
         },
         {
+            "taskName": "UpdatePowerShellGallery",
+            "group": "build",
+            "args": [
+                "Write-Host 'Invoking UpdatePowerShellGallery'; Import-Module ./helper/Update-PowerShellGallery.ps1 -Force;",
+                "Update-PowerShellGallery -Path ./Veeam.PowerCLI-Interactions -ApiKey $(Read-Host -Prompt ApiKey);",
+                "Invoke-Command { Write-Host 'Completed CreateDocs task in task runner.' }"
+            ]
+        },
+        {
             "taskName": "UpdateManifestData-Patch",
             "args": [
                 "Write-Host 'Invoking Patch UpdateManifestData'; Import-Module ./helper/Update-ModuleManifestData.ps1 -Force;",
-                "Update-ModuleManifestData -Path ./*.psd1 -Patch;",
+                "Update-ModuleManifestData -Path ./Veeam.PowerCLI-Interactions/*.psd1 -Patch;",
                 "Invoke-Command { Write-Host 'Completed Patch UpdateManifestData task in task runner.' }"
             ]
         },
@@ -51,7 +60,7 @@
             "taskName": "UpdateManifestData-Minor",
             "args": [
                 "Write-Host 'Invoking Minor UpdateManifestData'; Import-Module ./helper/Update-ModuleManifestData.ps1 -Force;",
-                "Update-ModuleManifestData -Path ./*.psd1 -Minor;",
+                "Update-ModuleManifestData -Path ./Veeam.PowerCLI-Interactions/*.psd1 -Minor;",
                 "Invoke-Command { Write-Host 'Completed Minor UpdateManifestData task in task runner.' }"
             ]
         },
@@ -59,7 +68,7 @@
             "taskName": "UpdateManifestData-Major",
             "args": [
                 "Write-Host 'Invoking Major UpdateManifestData'; Import-Module ./helper/Update-ModuleManifestData.ps1 -Force;",
-                "Update-ModuleManifestData -Path ./*.psd1 -Major;",
+                "Update-ModuleManifestData -Path ./Veeam.PowerCLI-Interactions/*.psd1 -Major;",
                 "Invoke-Command { Write-Host 'Completed Major UpdateManifestData task in task runner.' }"
             ]
         },
